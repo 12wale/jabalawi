@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300..900&family=Oi&family=Orbitron:wght@400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-gold: #D4A017;
+  --color-dark-black: #111111;
+  --color-secondary-black: #1B1B1B;
+  --color-primary-red: #C62828;
+  --color-light-text: #FFFFFF;
+  --color-gray-text: #BDBDBD;
+  --font-alexandria: 'Alexandria', sans-serif;
+  --font-oi: 'Oi', serif;
+}
+
+@layer base {
+  html, body {
+    direction: rtl;
+    background-color: var(--color-dark-black);
+    color: var(--color-light-text);
+    font-family: var(--font-alexandria);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+}
+
+.oi-regular {
+  font-family: var(--font-oi);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.head-oi {
+  font-family: var(--font-oi);
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(4rem, 10vw, 8rem);
+}
+
+.shadow-oi {
+  color: #ffe8f2;
+  margin-bottom: 8px;
+  text-shadow:
+    2px 2px 0 #6e2db7,
+    4px 4px 0 #6323ac,
+    6px 6px 0 #56199e,
+    8px 8px 0 #47138b,
+    10px 10px 0 #3d0f75,
+    0 0 8px #ff00ea,
+    0 0 20px #ff00ea,
+    0 0 40px #ff00ea,
+    0 0 80px #ff00ea;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(27, 27, 27, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+
+/* Hide scrollbar for clean look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5860d;
+}
+
+.smoke {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: .18;
+  animation: smokeMove 12s ease-in-out infinite alternate;
+}
+
+.smoke-right {
+  right: -200px;
+  bottom: 0;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.5) 0%,
+      rgba(255,255,255,.15) 40%,
+      transparent 75%
+    );
+}
+
+.smoke-left {
+  left: -200px;
+  bottom: 0;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.45) 0%,
+      rgba(255,255,255,.12) 40%,
+      transparent 75%
+    );
+
+  animation-delay: 4s;
+}
+
+@keyframes smokeMove {
+  0% {
+    transform: translateY(80px) scale(.8);
+    opacity: .1;
+  }
+
+  50% {
+    opacity: .22;
+  }
+
+  100% {
+    transform: translateY(-120px) scale(1.3);
+    opacity: .05;
+  }
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Orbitron:wght@400..900&display=swap');
+
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1 span{
+
+    color:#ffe8f2;
+    margin-bottom: 8px;
+    text-shadow:
+
+    2px 2px 0 #6e2db7,
+    4px 4px 0 #6323ac,
+    6px 6px 0 #56199e,
+    8px 8px 0 #47138b,
+    10px 10px 0 #3d0f75,
+
+    0 0 8px #ff00ea,
+    0 0 20px #ff00ea,
+    0 0 40px #ff00ea,
+    0 0 80px #ff00ea;
+}
+
