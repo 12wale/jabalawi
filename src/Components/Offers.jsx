@@ -7,6 +7,7 @@ import "swiper/css/effect-cards";
 import { FiCheckCircle } from "react-icons/fi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import off from "../assets/off.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,7 +33,7 @@ const offers = [
     price: "220 ج.م",
     oldPrice: "280 ج.م",
     items: ["نصف فرخة مشوية", "أرز بسمتي", "سلطة", "مشروب غازي"],
-    bgImage: "https://images.unsplash.com/photo-1598514982205-f36b96d1e8dd?auto=format&fit=crop&w=800&q=80",
+    bgImage: off,
     badge: "فردي"
   }
 ];

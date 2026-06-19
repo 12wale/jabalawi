@@ -2,14 +2,11 @@ import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import Features from "../Components/Features";
 import PopularDishes from "../Components/PopularDishes";
-import Menu from "../Components/Menu";
 import Offers from "../Components/Offers";
-import AboutSection from "../Components/AboutSection";
 import Stats from "../Components/Stats";
-import Testimonials from "../Components/Testimonials";
 import Gallery from "../Components/Gallery";
 import Branches from "../Components/Branches";
-import Contact from "../Components/Contact";
+// import Contact from "../Components/Contact";
 import Footer from "../Layouts/Footer";
 
 const Home = () => {
@@ -19,14 +16,11 @@ const Home = () => {
       <Hero />
       <Features />
       <PopularDishes />
-      <Menu />
       <Offers />
-      <AboutSection />
       <Stats />
-      <Testimonials />
       <Gallery />
       <Branches />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

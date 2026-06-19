@@ -53,7 +53,7 @@ const dishes = [
     description: "طرب محشو بالكفتة مع دهن الضأن.",
     price: 290,
     image:
-      "https://images.unsplash.com/photo-1514517220031-1daafaf45f4d?auto=format&fit=crop&w=800&q=80",
+      "https://img.youm7.com/large/202412111154435443.jpg",
   },
 ];
 

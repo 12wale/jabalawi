@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import logo from "../assets/logo.png";
 import heroimg from "../assets/heroimg.png";
+import { Link } from "react-router";
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -105,12 +106,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <a
-                href="#menu"
+              <Link to="/menu" 
                 className="bg-primary-gold hover:bg-yellow-600 text-dark-black px-8 py-3 rounded-full font-bold transition-all shadow-[0_0_15px_rgba(212,160,23,0.4)] hover:shadow-[0_0_25px_rgba(212,160,23,0.6)] hover:-translate-y-1"
               >
                 تصفح المنيو
-              </a>
+              </Link>
 
               <a
                 href="#order"
@@ -145,7 +145,7 @@ const Hero = () => {
             {/* Badge */}
             <div
               ref={badgeRef}
-              className="absolute bottom-0 left-0 md:-bottom-6 md:-left-6 bg-dark-black glass p-4 rounded-xl border border-primary-gold/30 shadow-2xl animate-bounce opacity-0"
+              className="absolute bottom-0 hidden lg:block left-0 md:-bottom-6 md:-left-6 bg-dark-black glass p-4 rounded-xl border border-primary-gold/30 shadow-2xl animate-bounce opacity-0"
             >
               <div className="flex items-center gap-3">
                 <span className="text-3xl">🔥</span>
